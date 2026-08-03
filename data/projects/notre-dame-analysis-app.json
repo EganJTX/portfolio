@@ -1,0 +1,15 @@
+{
+  "slug": "notre-dame-analysis-app",
+  "title": "Notre Dame Football Analysis",
+  "teaser": "138 years of Notre Dame football, broken down by coach, opponent rank, and era.",
+  "screenshots": ["notre-dame-analysis-app-1.png", "notre-dame-analysis-app-2.png"],
+  "demoUrl": "https://eganjtx.github.io/notre-dame-analysis-app/",
+  "repoUrl": "https://github.com/eganjtx/notre-dame-analysis-app",
+  "sections": {
+    "problem": "The first question started with wondering if there was the possibility to build a script that would tell me, at a certain point of tenure, if we knew if a coach was headed for legendary status or non-legendary status. The Comparison to Legends graph on the first page was the culmination of this question once I figured out how to code it, and then the questions developed in complexity as to why or why not from there.",
+    "build": "A static analysis dashboard covering every Notre Dame season from 1887 to present. Pick any coach and see their overall win rate, how much of it came against ranked opponents (at time of game and at season's end), and how their win percentage tracks against Notre Dame's legendary coaches versus everyone else who's held the job.",
+    "technical": "Static HTML/JS front end reading from a single data.json file, no backend server. A Python scraper (Selenium, BeautifulSoup, pandas) collects the data. A GitHub Actions workflow runs it weekly on a cron schedule and commits the refreshed data back to the repo, so the live site stays current without a manual redeploy.",
+    "learning": "Initially I wanted to build a code-driven business intelligence application. I started with Streamlit, forcing myself to learn more Python to help it culminate in some of the complexity behind the questions I wanted to answer. Streamlit worked well until the community app kept cycling my application to sleep. I wanted to see if I could improve on that first iteration, remove unnecessary overhead like a Google Sheet middleware, and culminate in a simplified data.json approach with more direct HTML methods as well.",
+    "next": "Each tab has been the next complexity item in the chain. Static KPIs led to a breakdown split of home vs. away. That led to questions of comparison to specific opponents relative to history. Most recently has been Opponent Focus, where I'd like to keep improving the ability to generate a narrative output preview: how has Notre Dame fared versus this team, or in-kind teams and situations, before, and how has the current coach fared against those same opponents or in-kind situations, accounting for weather, home/road, opponent, and ranked vs. non-ranked."
+  }
+}

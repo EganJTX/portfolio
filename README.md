@@ -1,6 +1,6 @@
 # Jay Egan — Portfolio
 
-Shell/orchestrator site for jayegan.github.io. Static HTML/CSS/JS, no build step,
+Shell/orchestrator site for eganjtx.github.io/portfolio. Static HTML/CSS/JS, no build step,
 no app code. Each project it links to lives in its own standalone repo with its
 own GitHub Pages demo.
 
@@ -31,8 +31,8 @@ assets/screenshots/          Project screenshot images, referenced by filename i
   "title": "Job Tracker",
   "teaser": "One line, shows on the home card.",
   "screenshots": ["job-tracker-1.png", "job-tracker-2.png"],
-  "demoUrl": "https://jayegan.github.io/job-tracker",
-  "repoUrl": "https://github.com/jayegan/job-tracker",
+  "demoUrl": "https://eganjtx.github.io/job-tracker",
+  "repoUrl": "https://github.com/eganjtx/job-tracker",
   "sections": {
     "problem": "...",
     "build": "...",
