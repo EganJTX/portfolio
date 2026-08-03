@@ -1,0 +1,15 @@
+{
+  "slug": "job-tracker",
+  "title": "Job Tracker",
+  "teaser": "A scoring tool to cut through job search noise.",
+  "screenshots": ["job-tracker-1.png", "job-tracker-2.png"],
+  "demoUrl": "https://jayegan.github.io/job-tracker-demo",
+  "repoUrl": "https://github.com/jayegan/job-tracker",
+  "sections": {
+    "problem": "I had a growing list of roles and no consistent way to compare them beyond gut feel. Spreadsheets tracked status fine but said nothing about whether a role was actually worth pursuing relative to the others on the list.",
+    "build": "A scoring tool that weighs fit factors like comp floor, Glassdoor rating, and domain match, then ranks roles so I could tell at a glance which ones deserved more time and which ones were just noise.",
+    "technical": "Node.js Express local app, server-side JSON persistence with graceful degradation fallback so the tool still works if the data file is missing or malformed.",
+    "learning": "The first scoring model over-weighted comp and under-weighted team structure, which didn't match how I actually felt about roles once I sat with the scores. Watching the gap between the model's ranking and my gut reaction was the most useful part of building it.",
+    "next": "Thinking about adding a feedback loop that reweights criteria based on which roles I actually pursued vs skipped."
+  }
+}
