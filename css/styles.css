@@ -220,11 +220,11 @@ h1, h2, h3 {
 
 .card-body h3 {
   font-size: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .card-tagline {
-  margin: 0 0 8px;
+  margin: 0 0 12px;
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 700;
