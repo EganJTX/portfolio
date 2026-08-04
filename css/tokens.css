@@ -1,24 +1,30 @@
-/* Brand tokens — theme-swappable. Default theme = Slate.
-   To switch to Evergreen, replace the values in :root below with the
-   "Evergreen alternate" block (confirm exact hex from designer first). */
+/* Brand tokens — theme-swappable. Default theme = Evergreen.
+   To switch back to Slate, replace the values in :root below with the
+   "Slate alternate" block. */
 
 :root {
-  --color-primary: #2B3440;   /* Slate dark, header background */
-  --color-grey-light: #E6E8EB;
-  --color-mid: #6B7C8C;       /* logo/wordmark tint on dark header */
-  --color-pale: #D7E1EA;      /* card borders/backgrounds */
-  --color-offwhite: #F6F7F8;  /* body/page background */
+  --color-primary: #28453F;      /* Evergreen, header background + headings */
+  --color-primary-deep: #1F3631; /* Deep Evergreen, shadow/hover tint */
+  --color-mid: #5A4536;          /* Walnut, body text / softer neutral */
+  --color-accent: #7B6240;       /* Brass, accent lines + emphasis moments */
+  --color-pale: #ECEBE6;         /* Stone, card borders/backgrounds, header mark+wordmark tint */
+  --color-offwhite: #FCFCFA;     /* Paper, body/page background */
+  --color-grey-light: #A8B9AF;   /* Sage, hover tint */
+  --color-card: #FFFFEF;         /* Card surface */
 
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
 }
 
-/* Evergreen alternate (swap-in values, same variable names):
+/* Slate alternate (original palette, swap-in values, same variable names):
 :root {
-  --color-primary: #1B3A2E;
-  --color-grey-light: #E6E8EB;
+  --color-primary: #2B3440;
+  --color-primary-deep: #1F2733;
   --color-mid: #6B7C8C;
+  --color-accent: #6B7C8C;
   --color-pale: #D7E1EA;
   --color-offwhite: #F6F7F8;
+  --color-grey-light: #E6E8EB;
+  --color-card: #FFFFFF;
 }
 */

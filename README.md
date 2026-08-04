@@ -29,7 +29,7 @@ assets/screenshots/          Project screenshot images, referenced by filename i
 {
   "slug": "job-tracker",
   "title": "Job Tracker",
-  "teaser": "One line, shows on the home card.",
+  "teaser": "Lead with what it is, then the specific hook, e.g. 'A scoring tool to cut through job search noise.'",
   "screenshots": ["job-tracker-1.png", "job-tracker-2.png"],
   "demoUrl": "https://eganjtx.github.io/job-tracker",
   "repoUrl": "https://github.com/eganjtx/job-tracker",
@@ -50,8 +50,8 @@ No other file needs to change. `project.html` renders whatever slug is in the UR
 ## Theme
 
 Colors and fonts are CSS custom properties in `css/tokens.css`. The file
-default is the Slate palette; an Evergreen alternate is commented in the same
-file, ready to swap in once exact hex values are confirmed.
+default is the Evergreen palette; a Slate alternate is commented in the same
+file if you ever want to swap back.
 
 ## Local preview
 

@@ -132,7 +132,7 @@ h1, h2, h3 {
 
 .hero-rule {
   border: none;
-  border-top: 1px solid var(--color-pale);
+  border-top: 2px solid var(--color-accent);
   width: 64px;
   margin: 0 0 10px;
 }
@@ -169,7 +169,7 @@ h1, h2, h3 {
 .project-card {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--color-card);
   border: 1px solid var(--color-pale);
   border-radius: 10px;
   overflow: hidden;
@@ -180,7 +180,7 @@ h1, h2, h3 {
 
 .project-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(43, 52, 64, 0.08);
+  box-shadow: 0 10px 24px rgba(40, 69, 63, 0.08);
 }
 
 .card-screenshot {
