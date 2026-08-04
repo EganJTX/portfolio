@@ -1,0 +1,15 @@
+{
+  "slug": "bon-app",
+  "title": "Bon App",
+  "teaser": "A family meal planner that turns weekly plans into shopping lists and AI-ready ideation prompts.",
+  "screenshots": ["bon-app-1.png", "bon-app-2.png"],
+  "demoUrl": "https://eganjtx.github.io/bon-app/demo.html",
+  "repoUrl": "https://github.com/eganjtx/bon-app",
+  "sections": {
+    "problem": "As the meal planner for the family and sometimes receiving degrees of good and unspoken feedback on the plan, I thought there had to be an easier way to help generate ideas. I wanted to test if I could build certain conditions like hard no dishes or breaks between dishes or ingredients if I could keep up a good amount of variety without spending a long time iterating on items I know my family would enjoy.",
+    "build": "A weekly meal planner: plan what's for dinner, track what actually got made and whether it landed, and auto-build a shopping list from what each planned meal needs. It also carries rollovers from last week's plan and family requests into a generated 'ideation prompt' you paste into an AI agent of your choice, then imports whatever numbered list of meal ideas comes back.",
+    "technical": "HTML/JS front end (app.js, data.js, styles.css) backed by a small dependency-free Node server (server.js) that persists state to a local data.json file, with an automatic localStorage fallback if no server is running. demo.html is a separate, self-contained de-identified build with no server and no real data, made specifically for public hosting on GitHub Pages.",
+    "learning": "I really underappreciated the interplay of dates for a weekly planning iteration. You were often planning for next week in the current week and shopping now for an order you'd place, but the intersection of carrying over a previous week's planned but not made dish(es) created unnecessary mental overhead on how to handle \"previous\" or \"next\" weeks in the ease of understanding what each tab should be on in the given time and operation relative to another.",
+    "next": "I would like to try to add more support on pulling in example recipes. It currently helps ideate on the dishes themselves in the variety, but doesn't pull in a URL recipe example in doing so. Next steps would be further automating the workflow to draw in example or highly rated recipes, scraping the ingredients, and simplifying the process to add the user's missing ingredients to the Shopping List tab."
+  }
+}

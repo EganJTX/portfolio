@@ -10,7 +10,7 @@
   --color-pale: #ECEBE6;         /* Stone, card borders/backgrounds, header mark+wordmark tint */
   --color-offwhite: #FCFCFA;     /* Paper, body/page background */
   --color-grey-light: #A8B9AF;   /* Sage, hover tint */
-  --color-card: #FFFFEF;         /* Card surface */
+  --color-card: #FFFFFF;         /* Card surface */
 
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;

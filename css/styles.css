@@ -74,6 +74,7 @@ h1, h2, h3 {
   letter-spacing: 0.16em;
   color: var(--color-pale);
   font-size: 26px;
+  white-space: nowrap;
 }
 
 .header-nav {
@@ -139,9 +140,10 @@ h1, h2, h3 {
 
 .hero-punch {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--color-primary);
   margin-bottom: 18px;
 }
@@ -223,13 +225,17 @@ h1, h2, h3 {
   color: var(--color-mid);
 }
 
-.section-label {
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-mid);
+.section-heading {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.section-rule {
+  border: none;
+  border-top: 2px solid var(--color-accent);
+  width: 64px;
+  margin: 14px 0 8px;
 }
 
 /* ---------- About page ---------- */
@@ -426,5 +432,27 @@ h1, h2, h3 {
   }
   .about-content h1 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header .container {
+    height: 72px;
+  }
+  .brand {
+    gap: 10px;
+  }
+  .logo-mark {
+    height: 34px;
+  }
+  .brand-divider {
+    height: 24px;
+  }
+  .wordmark {
+    font-size: 15px;
+    letter-spacing: 0.06em;
+  }
+  .header-nav {
+    gap: 14px;
   }
 }
