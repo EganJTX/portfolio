@@ -29,7 +29,8 @@ assets/screenshots/          Project screenshot images, referenced by filename i
 {
   "slug": "job-tracker",
   "title": "Job Tracker",
-  "teaser": "Lead with what it is, then the specific hook, e.g. 'A scoring tool to cut through job search noise.'",
+  "tagline": "Short, punchy, 2-4 words. Skip it if nothing fits without forcing it, e.g. 'Legendary Status Quantified'.",
+  "teaser": "A fuller sentence: what it is, then the specific hook, e.g. 'A scoring tool to cut through job search noise.'",
   "screenshots": ["job-tracker-1.png", "job-tracker-2.png"],
   "demoUrl": "https://eganjtx.github.io/job-tracker",
   "repoUrl": "https://github.com/eganjtx/job-tracker",

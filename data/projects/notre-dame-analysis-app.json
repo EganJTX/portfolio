@@ -1,7 +1,8 @@
 {
   "slug": "notre-dame-analysis-app",
   "title": "Notre Dame Football Analysis",
-  "teaser": "A coaching performance dashboard for Notre Dame football, 138 years broken down by coach, opponent rank, and era.",
+  "tagline": "Legendary Status Quantified",
+  "teaser": "An analytical discovery of why a coach is or isn't headed towards legendary status, using game outcomes.",
   "screenshots": ["notre-dame-analysis-app-1.png", "notre-dame-analysis-app-2.png"],
   "demoUrl": "https://eganjtx.github.io/notre-dame-analysis-app/",
   "repoUrl": "https://github.com/eganjtx/notre-dame-analysis-app",

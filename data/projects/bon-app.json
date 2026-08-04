@@ -1,7 +1,8 @@
 {
   "slug": "bon-app",
   "title": "Bon App",
-  "teaser": "A family meal planner that turns weekly plans into shopping lists and AI-ready ideation prompts.",
+  "tagline": "Meal Planning Simplified",
+  "teaser": "Plan smarter meals, reduce decision fatigue, and make weeknight dinners easier.",
   "screenshots": ["bon-app-1.png", "bon-app-2.png"],
   "demoUrl": "https://eganjtx.github.io/bon-app/demo.html",
   "repoUrl": "https://github.com/eganjtx/bon-app",

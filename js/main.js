@@ -51,7 +51,9 @@ async function renderProjectGrid() {
 
     const body = document.createElement("div");
     body.className = "card-body";
-    body.innerHTML = `<h3>${project.title}</h3><p>${project.teaser}</p>`;
+    body.innerHTML = `<h3>${project.title}</h3>${
+      project.tagline ? `<p class="card-tagline">${project.tagline}</p>` : ""
+    }<p class="card-teaser">${project.teaser}</p>`;
     card.appendChild(body);
 
     grid.appendChild(card);
@@ -87,6 +89,7 @@ async function renderProjectDetail() {
   root.innerHTML = `
     <div class="project-detail-header">
       <h1>${project.title}</h1>
+      ${project.tagline ? `<p class="detail-tagline">${project.tagline}</p>` : ""}
       <p class="teaser">${project.teaser}</p>
     </div>
     <div class="detail-screenshots" id="detail-screenshots"></div>
