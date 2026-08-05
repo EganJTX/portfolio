@@ -346,6 +346,78 @@ h1, h2, h3 {
   }
 }
 
+/* ---------- Testimonials ---------- */
+
+.testimonials {
+  padding: 8px 0 96px;
+}
+
+.quote-rotator {
+  max-width: 640px;
+  margin-top: 36px;
+}
+
+.quote-mark {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 56px;
+  line-height: 1;
+  color: var(--color-pale);
+  margin-bottom: -12px;
+}
+
+.quote-text {
+  margin: 0 0 16px;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--color-primary);
+  transition: opacity 0.3s ease;
+}
+
+.quote-attribution {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  transition: opacity 0.3s ease;
+}
+
+.quote-text.fading,
+.quote-attribution.fading {
+  opacity: 0;
+}
+
+.quote-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.quote-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-pale);
+  cursor: pointer;
+}
+
+.quote-dot.active {
+  background: var(--color-accent);
+}
+
+@media (max-width: 600px) {
+  .quote-text {
+    font-size: 19px;
+  }
+}
+
 /* ---------- Project detail ---------- */
 
 .project-detail {
