@@ -130,12 +130,9 @@ async function renderTestimonials() {
   const textEl = document.getElementById("quote-text");
   const attributionEl = document.getElementById("quote-attribution");
   const dotsEl = document.getElementById("quote-dots");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const intervalMs = 7500;
   const fadeMs = 300;
 
   let index = 0;
-  let timer = null;
 
   function show(i) {
     index = i;
@@ -150,42 +147,18 @@ async function renderTestimonials() {
     }, fadeMs);
   }
 
-  function next() {
-    show((index + 1) % quotes.length);
-  }
-
-  function startTimer() {
-    if (reduceMotion) return;
-    stopTimer();
-    timer = setInterval(next, intervalMs);
-  }
-
-  function stopTimer() {
-    if (timer) clearInterval(timer);
-  }
-
   quotes.forEach((_, i) => {
     const dot = document.createElement("button");
     dot.type = "button";
     dot.className = "quote-dot";
     dot.setAttribute("aria-label", `Show testimonial ${i + 1}`);
-    dot.addEventListener("click", () => {
-      show(i);
-      startTimer();
-    });
+    dot.addEventListener("click", () => show(i));
     dotsEl.appendChild(dot);
   });
 
   textEl.textContent = quotes[0].quote;
   attributionEl.textContent = quotes[0].attribution;
   dotsEl.children[0].classList.add("active");
-
-  rotator.addEventListener("mouseenter", stopTimer);
-  rotator.addEventListener("mouseleave", startTimer);
-  rotator.addEventListener("focusin", stopTimer);
-  rotator.addEventListener("focusout", startTimer);
-
-  startTimer();
 }
 
 setFooterYear();
