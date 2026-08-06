@@ -368,6 +368,7 @@ h1, h2, h3 {
 
 .quote-text {
   margin: 0 0 16px;
+  min-height: 156px;
   font-family: var(--font-heading);
   font-style: italic;
   font-size: 22px;
@@ -392,10 +393,16 @@ h1, h2, h3 {
   opacity: 0;
 }
 
+.quote-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
 .quote-dots {
   display: flex;
   gap: 8px;
-  margin-top: 28px;
 }
 
 .quote-dot {
@@ -414,9 +421,37 @@ h1, h2, h3 {
   background: var(--color-accent);
 }
 
+.quote-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+.quote-arrow svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.quote-arrow:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 600px) {
   .quote-text {
     font-size: 19px;
+    min-height: 168px;
   }
 }
 

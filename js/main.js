@@ -130,6 +130,8 @@ async function renderTestimonials() {
   const textEl = document.getElementById("quote-text");
   const attributionEl = document.getElementById("quote-attribution");
   const dotsEl = document.getElementById("quote-dots");
+  const prevBtn = document.getElementById("quote-prev");
+  const nextBtn = document.getElementById("quote-next");
   const fadeMs = 300;
 
   let index = 0;
@@ -155,6 +157,9 @@ async function renderTestimonials() {
     dot.addEventListener("click", () => show(i));
     dotsEl.appendChild(dot);
   });
+
+  prevBtn.addEventListener("click", () => show((index - 1 + quotes.length) % quotes.length));
+  nextBtn.addEventListener("click", () => show((index + 1) % quotes.length));
 
   textEl.textContent = quotes[0].quote;
   attributionEl.textContent = quotes[0].attribution;
