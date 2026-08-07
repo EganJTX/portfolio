@@ -1,0 +1,16 @@
+{
+  "slug": "job-tracker",
+  "title": "Lighthouse",
+  "tagline": "Navigating the Job Market Fog",
+  "teaser": "A local job pipeline tracker that pairs with an AI scorer bot to cut through job search noise.",
+  "screenshots": ["job-tracker-1.png", "job-tracker-2.png"],
+  "demoUrl": "https://eganjtx.github.io/job-tracker/demo.html",
+  "repoUrl": "https://github.com/eganjtx/job-tracker",
+  "sections": {
+    "problem": "In the job market today there are a lot of opportunities but between HR processes, AI HR processes, and job seeker manual and AI processes, there is a lot of noise and clutter. Tracking applications via solely a repo or solely a sheet felt overly manual without drive to see great roles to conclusion. In building this app, I wanted to build an ecosystem to match today's fast-paced market and keep myself honest to where opportunities lie and where I could learn for subsequent applications.",
+    "build": "The hub of a three-part system, not an AI app on its own. Lighthouse stores and tracks scored roles through a full pipeline (scored, applied, three stages of interview, offer, or closed out as ghosted, shelved, rejected, or passed), and turns a one-time setup form into the instruction files an external AI scorer bot needs. The day-to-day loop: paste a job description into a separate Job Scorer project (Claude, ChatGPT, Gemini, whatever supports persistent instructions), it returns a score, a verdict tier, and cover letter angles, and at the end of a session that gets exported as JSON and imported back into Lighthouse, merging into the pipeline without overwriting any status changes made along the way.",
+    "technical": "A small Express server with no database, reading and writing local JSON files directly. No external API calls happen inside the app itself, all the AI scoring happens in a separate bot the user sets up and owns; Lighthouse only tracks the results. Every file holding real data (config, identity, pipeline) is gitignored and bootstrapped from committed .example templates on first run, so a fresh clone starts with fictional seed data, never someone's real job search. The public demo is a fully self-contained static build with a fictional persona and fictional companies baked in, no server required to view it.",
+    "learning": "Building the correct interoperability between the agent and the app was an initial hurdle. Items might get lost in the middle if I wasn't careful, and it could defeat the purpose of the app. Also, there was a good amount of back and forth in figuring out what a technology disruptor like AI does to your perceptive identity, that would result in it moving more frequently than I initially anticipated, to see the scores continue to true up to what felt accurate as the app grew.",
+    "next": "Continued automation with a lot of good context flowing back and forth. The summaries generated bidirectionally could likely handshake easier, but I also think some good context could continue to further true up deficits in recommendations if those instructions were continued to be tightened - what did you learn when X happened, to continue the training set behavior for even better subsequent recommendations?"
+  }
+}
