@@ -1,0 +1,15 @@
+{
+  "slug": "career-coach",
+  "title": "Career Coach",
+  "tagline": "A Coach with Context",
+  "teaser": "A three-file context pattern that turns any AI assistant into a consistent job-search sounding board.",
+  "screenshots": ["career-coach-1.png", "career-coach-2.png"],
+  "repoUrl": "https://github.com/eganjtx/career-coach",
+  "sections": {
+    "problem": "While the Lighthouse app served a purpose of the black and white tracking for all opportunities, as they grew and context grew into what I was facing or seeing in the market, an assistant really served its purpose to layer in context, thoughts, and helpful prompts to see the end result met.",
+    "build": "A three-file context pattern, not an app, that turns any AI assistant into a consistent strategic partner across a job search instead of restarting cold in every conversation. identity.md (career history, operating style, target roles, non-negotiables) is the one required file; network.md (relationship and outreach state) and pipeline.json (scored roles under consideration) are optional and just make the assistant sharper. At the end of a search week, or the start of a new thread, the assistant produces a handoff package, proposed identity.md edits, an updated network.md, and a starter summary, so a long-running search doesn't collapse into one ever-growing conversation.",
+    "technical": "Markdown and JSON files functioning as a persistent-instructions pattern, no application code, no server. Built and tested in a Claude Project, but written to run in any AI tool that supports persistent instructions plus attached files. It shares its identity.md format and pipeline.json schema with Lighthouse, so the two bootstrap each other, but neither requires the other, this works standalone from a blank identity.md.",
+    "learning": "Biggest learning was that the height of context growing was beneficial until it was not. Part of what really helped stabilize the idea was the week-starter, which helped retain direction, next steps, and avoided as much re-hashing of context that'd typically prevent concern of switching context windows. The agent now runs quicker week over week without losing its context.",
+    "next": "Next will be further organizing the file exchange process between this and the Lighthouse app for further overhead optimization. Reuse was an initial big win to make each largely dependent on the same files, but the manual overhead is still higher than I'd prefer to see once it is optimized."
+  }
+}
