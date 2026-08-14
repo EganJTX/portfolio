@@ -1,0 +1,16 @@
+{
+  "slug": "trim-app",
+  "title": "Trim",
+  "tagline": "Refined Focus Over Noise",
+  "teaser": "A weight-loss dashboard that turns your own Google Sheet into a weekly trend, with an optional AI coach.",
+  "screenshots": ["trim-app-1.png", "trim-app-2.png"],
+  "demoUrl": "https://eganjtx.github.io/trim-app/demo.html",
+  "repoUrl": "https://github.com/eganjtx/trim-app",
+  "sections": {
+    "problem": "I started a fitness program a few years ago with the aim of losing a few pounds. My personal aim was to track signals surrounding me that were influencing my goal positively or negatively. With a lot of data recorded, it made sense to me that some of what was missing was succinct summaries, conclusions against my signals, and a test to see if I could bring AI in to help synthesize all of the factors.",
+    "build": "A weekly-anchored dashboard that reads directly from one or more Google Sheets (public CSV export links, no API keys) and joins them by date into KPIs, a trend chart, and a Y/N daily-goal compliance card. Weeks are the atomic unit everywhere, not a rolling window, the current in-progress week shows a live count but withholds comparisons until it's actually complete. An optional Coach feature shells out locally to the Claude Code CLI to write a weekly verdict and recommendation, checking recent weeks of history before writing a new one.",
+    "technical": "A small Express server with no database, reading local JSON config and fetching Google Sheets CSV exports server-side. The dashboard itself has no built-in LLM calls; the one AI feature runs the Claude Code CLI headlessly on the user's own machine when they click Analyze Week, nothing is sent to a hosted API by the app. The public demo is a self-contained static build with fictional data, no server or Sheets connection needed to view it.",
+    "learning": "The agentic position on this app is pretty robust in terms of thinking through what all I should need to send in as context to be rationalized. Figuring out how I wanted to go about generating an agentic recommendation and then turn to feed a certain volume of them back in later periods to reinforce the ecosystem of activity was an exciting opportunity to dig further into.",
+    "next": "The coach currently has a specific personality. The next step I'd like to explore is creating multiple personas for the coach to meet a user at his/her preferred style and have the agentic piece speak more to the resolution that user might need for his/her own personal journey to be successful."
+  }
+}
