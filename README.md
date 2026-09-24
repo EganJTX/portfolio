@@ -48,6 +48,8 @@ assets/screenshots/          Project screenshot images, referenced by filename i
 
 No other file needs to change. `project.html` renders whatever slug is in the URL.
 
+`tagline` and `demoUrl` are optional. Omit `demoUrl` for projects with no live demo (an agent or prompt pattern, for example) and the Live Demo button simply won't render.
+
 ## Theme
 
 Colors and fonts are CSS custom properties in `css/tokens.css`. The file
