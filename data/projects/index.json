@@ -1,8 +1,9 @@
 [
+  "waypoint-app",
   "notre-dame-analysis-app",
   "bon-app",
-  "music-producer",
   "job-tracker",
   "career-coach",
-  "trim-app"
+  "trim-app",
+  "music-producer"
 ]
